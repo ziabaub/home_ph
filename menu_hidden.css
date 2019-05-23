@@ -1,0 +1,34 @@
+.mainListItems{
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.mainListItems li{
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 1px solid grey;
+}
+
+.mainListItems li:first-child{
+    /*border-top: 1px solid grey;*/
+}
+
+.mainListItems li:last-child{
+    margin-top: 0;
+    border-bottom: none;
+}
+
+.menu-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: 100%;
+}
+
+.menu-wrapper:hover .mainListItems{
+    display: block;
+}

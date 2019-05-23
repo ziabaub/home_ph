@@ -1,0 +1,74 @@
+nav{
+    height: 70px;
+}
+
+nav span{
+    font-size: 17px;
+}
+
+nav ul li a{
+    font-size: 14px;
+}
+
+nav ul li{
+    height: 50px;
+}
+
+nav ul{
+    top: 70px;
+    width: 200px;
+}
+
+.menu-wrapper{
+    width: 60px;
+}
+
+.menu-wrapper i{
+    font-size: 26px;
+}
+
+.banner{
+    height: 420px;
+}
+
+.banner-info{
+    font-size: 30px;
+}
+
+.banner-link, .banner-ico{
+    font-size: 15px;
+}
+
+.text-box{
+    height: 35px;
+}
+
+.text-box-content article{
+    font-size: 15px;
+}
+
+.text-box-link i{
+    font-size: 25px;
+}
+
+.galery-link i{
+    font-size: 55px;
+}
+
+.galery-item{
+    width: 100%;
+}
+
+main article{
+    width: 100%;
+    font-size: 15px;
+}
+
+.title-link{
+    font-size: 20px;
+}
+
+.mainListItems li :first-child{
+
+    height: 50px;
+}

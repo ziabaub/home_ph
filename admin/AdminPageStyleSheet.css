@@ -1,0 +1,88 @@
+.textAreaBlock{
+    width: 430px;
+    height: 470px;
+    margin-left: 10%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.textArea{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 97%;
+    height: 97%;
+    overflow-y: auto;
+
+}
+.flexBox{
+
+    display :flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+
+    position: relative;
+    background-image: url(adminSources/background-cement-concrete-242236.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.inputFields{
+
+    padding-top: 10px;
+}
+.labelFields{
+
+    padding-top: 10px;
+}
+
+.labelFields ul li {
+    list-style: none;
+    padding-top: 10px;
+    height: 30px;
+}
+.labelFields ul li h3 {
+    list-style: none;
+    padding-top: 70px;
+    height: 30px;
+}
+.labelFields ul li h4 {
+    list-style: none;
+    padding-top: 55px;
+    height: 30px;
+}
+
+.secondUl {
+    padding: 0;
+}
+
+.inputFields form ul li {
+    list-style: none;
+    padding-top: 10px;
+
+}
+
+.inputFields form ul li input{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+div.editable {
+
+}
+.textAreaEdit{
+    align-content: start;
+    width: 430px;
+    height: 470px;
+    margin-left: 10%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0;
+}
+

@@ -1,0 +1,62 @@
+nav{
+    height: 95px;
+}
+
+nav span{
+    display: none;
+}
+
+nav ul{
+    font-size: 20px;
+}
+
+.banner{
+    height: 675px;
+}
+
+.banner-info{
+    font-size: 45px;
+}
+
+.banner-link, .banner-ico{
+    font-size: 25px;
+}
+
+.text-box{
+    height: 50px;
+}
+
+.text-box-content article{
+    font-size: 25px;
+}
+
+.text-box-link i{
+    font-size: 40px;
+}
+
+.galery-link i{
+    font-size: 30px;
+}
+
+.galery-item{
+    float: left;
+    width: 33.33333%;
+}
+
+main article{
+    float: left;
+    width: 50%;
+    font-size: 12px;
+}
+
+main article:nth-child(odd){
+    padding-left: 4%;
+}
+
+main article:nth-child(even){
+    padding-right: 4%;
+}
+
+.title-link{
+    font-size: 24px;
+}
