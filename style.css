@@ -14,6 +14,9 @@ body{
     width: 100%;
     max-width: 1680px;
 }
+.text{
+    text-align: justify;
+}
 
 nav span{
     display: flex;

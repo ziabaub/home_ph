@@ -1,3 +1,27 @@
+
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ziadelsarrih
+ * Date: 2019-05-29
+ * Time: 00:56
+ */
+
+
+require_once __DIR__ . '/gettext/lib/gettext.php';
+require_once __DIR__ . '/gettext/lib/streams.php';
+
+$local_lang = $_GET['lang'];
+$local_file = new FileReader("local/$local_lang/LC_MESSAGES/messages.mo");
+$local_fetch = new gettext_reader($local_file);
+
+function __($text)
+{
+    global $local_fetch;
+    return $local_fetch->translate($text);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +39,9 @@ booking">
     <meta name="copyright" content="zi">
     <meta name="language" content="EN">
     <meta name="generator" content="FreeMetaTagGenerator.com">
+
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="(max-width:320px)" href="sheet_0_320.css">
     <link rel="stylesheet" media="(min-width:321px) and (max-width:640px)" href="sheet_320_640.css">
@@ -27,6 +54,8 @@ booking">
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+<h1><?php echo __('translate me') ?></h1>
+
 <nav class=" mainNav">
     <span>Navigation</span>
     <div class="menu-wrapper">
@@ -94,7 +123,7 @@ booking">
 </div>
 <main>
     <a href="http://msrtrading.co/" class="title-link">www.msrtrading.co</a>
-    <article>
+    <article class="text">
         After World War II, Ruska resumed work at Siemens, where he continued to develop the electron microscope,
         producing the first microscope with 100k magnification.[12] The fundamental structure of this microscope design,
         with multi-stage beam preparation optics, is still used in modern microscopes. The worldwide electron microscopy
@@ -104,7 +133,7 @@ booking">
         one hundred attendees.[11] Later conferences included the "First" international conference in Paris, 1950 and
         then in London in 1954.
     </article>
-    <article>
+    <article class="text">
         After World War II, Ruska resumed work at Siemens, where he continued to develop the electron microscope,
         producing the first microscope with 100k magnification.[12] The fundamental structure of this microscope design,
         with multi-stage beam preparation optics, is still used in modern microscopes. The worldwide electron microscopy
@@ -114,7 +143,7 @@ booking">
         one hundred attendees.[11] Later conferences included the "First" international conference in Paris, 1950 and
         then in London in 1954.
     </article>
-    <article>
+    <article class="text">
         After World War II, Ruska resumed work at Siemens, where he continued to develop the electron microscope,
         producing the first microscope with 100k magnification.[12] The fundamental structure of this microscope design,
         with multi-stage beam preparation optics, is still used in modern microscopes. The worldwide electron microscopy
@@ -124,8 +153,7 @@ booking">
         one hundred attendees.[11] Later conferences included the "First" international conference in Paris, 1950 and
         then in London in 1954.
     </article>
-    </article>
-    <article>
+    <article class="text">
         After World War II, Ruska resumed work at Siemens, where he continued to develop the electron microscope,
         producing the first microscope with 100k magnification.[12] The fundamental structure of this microscope design,
         with multi-stage beam preparation optics, is still used in modern microscopes. The worldwide electron microscopy
@@ -134,8 +162,17 @@ booking">
         and Japan (JEOL). The first international conference in electron microscopy was in Delft in 1949, with more than
         one hundred attendees.[11] Later conferences included the "First" international conference in Paris, 1950 and
         then in London in 1954.
-    </article>
     </article>
 </main>
+
+
+<div class="lang1">
+    <div class="dropdown2">
+        <form id="contact-form" method="post" action="index.php">
+            <input style="margin-left: 90%" name="myPage" type="submit" class="form-control submit" value="Ru">
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
