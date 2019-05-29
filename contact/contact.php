@@ -5,10 +5,13 @@
  * Date: 2019-02-28
  * Time: 00:30
  */
+
 if (isset($_GET['res']))
     $error = $_GET['res'];
 else
-    $error = ""
+    $error = "";
+include_once ('../gettext/langTools.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +19,7 @@ else
 <head>
     <meta charset="utf-8">
 
-    <title>Responsive page</title>
+    <title><?php echo __('Responsive page') ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content=" idea , computers , money ...">
     <link rel="stylesheet" href="../style.css">
@@ -43,19 +46,19 @@ else
                 </li>
                 <li>
                     <?php $nameOfThePage = "MSRTrading&Travel" ?>
-                    <a href="../index.php?id=1&name=<?php echo urlencode($nameOfThePage) ?>">HOME</a>
+                    <a href="../index.php?id=1&name=<?php echo urlencode($nameOfThePage) ?>"><?php echo __('HOME') ?></a>
                 </li>
                 <li><?php $nameOfThePage = "newsPage" ?>
-                    <a href="../index.php?id=1&name=<?php echo $nameOfThePage ?>">NEWS</a>
+                    <a href="../index.php?id=1&name=<?php echo $nameOfThePage ?>"><?php echo __('NEWS') ?></a>
                 </li>
                 <li><?php $nameOfThePage = "products" ?>
-                    <a href="../index.php?id=1&name=<?php echo $nameOfThePage ?>">PRODUCTS</a>
+                    <a href="../index.php?id=1&name=<?php echo $nameOfThePage ?>"><?php echo __('PRODUCTS') ?></a>
                 </li>
                 <li><?php $nameOfThePage = "servicesPage" ?>
-                    <a href="../index.php?id=1&name=<?php echo $nameOfThePage ?>">SERVICES</a>
+                    <a href="../index.php?id=1&name=<?php echo $nameOfThePage ?>"><?php echo __('SERVICES') ?></a>
                 </li>
                 <li><?php $nameOfThePage = "contact" ?>
-                    <a href="contact.php?id=1&name=<?php echo $nameOfThePage ?>">CONTACTS</a>
+                    <a href="contact.php?id=1&name=<?php echo $nameOfThePage ?>"><?php echo __('CONTACTS') ?></a>
                 </li>
 
             </ul>
@@ -66,29 +69,29 @@ else
 
     <div class="flex-container">
         <div class="flex-container-address-content">
-            <h2>Get In Touch </h2><br/>
-            <p> Address : Beirut facing Chamsine Bakery</p><br/>
-            <p> Email : msr.trading.travel.co@gmail.com</p><br/>
-            <p> Phone : +961 76 743 330</p>
+            <h2><?php echo __('Get In Touch') ?> </h2><br/>
+            <p> <?php echo __('Address : Beirut facing Chamsine Bakery') ?></p><br/>
+            <p> <?php echo __('Email : msr.trading.travel.co@gmail.com') ?></p><br/>
+            <p> <?php echo __('Phone : +961 76 743 330') ?></p>
         </div>
         <div>
             <div class="flex-container-contents">
 
                 <ul style="list-style-type: none">
                     <li>
-                        name :
+                        <?php echo __('name :') ?>
                         <br/></li>
                     <li>
-                        address :
+                        <?php echo __('address :') ?>
                         <br/></li>
                     <li>
-                        phone :
+                        <?php echo __('phone :') ?>
                         <br/></li>
                     <li>
-                        email :
+                        <?php echo __('email :') ?>
                         <br/></li>
                     <li>
-                        message :
+                        <?php echo __('message :') ?>
                         <br/></li>
                     <li>
 
@@ -104,20 +107,20 @@ else
 
                 <ul class="flex-container-contents-textarea" style="list-style-type: none">
                     <li>
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        <input type="text" name="name" class="form-control" placeholder="<?php echo __('Your Name') ?>" required>
                         <br/></li>
                     <li>
-                        <input type="text" name="address" class="form-control" placeholder="Your Address" required>
+                        <input type="text" name="address" class="form-control" placeholder="<?php echo __('Your Address') ?>" required>
                         <br/></li>
                     <li>
                         <input type="text" name="phone" class="form-control" placeholder="+961 70123456" required>
                         <br/></li>
                     <li>
-                        <input type="text" name="email" class="form-control" placeholder="Your Email" required>
+                        <input type="text" name="email" class="form-control" placeholder="<?php echo __('Your Email') ?>" required>
                         <br/></li>
                     <li>
                         <textarea class="form-control" style="resize: none" type="text" name="message"
-                                  placeholder="Message" rows="5" required></textarea>
+                                  placeholder="<?php echo __('Message') ?>" rows="5" required></textarea>
                         <br/></li>
                     <div>
                         <input type="submit" name="submit" value="Send !">
@@ -132,7 +135,7 @@ else
 <div class="text-box">
     <div class="text-box-content">
         <article>
-            Go for new performance
+            <?php echo __('Go for new performance') ?>
         </article>
     </div>
     <a href="../index.php?id=1&home" class="text-box-link">

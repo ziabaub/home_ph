@@ -11,14 +11,17 @@ require '../control/textControl/printTools.php';
 $userCont = new userControl();
 $printer = new Printer();
 if (isset($_SESSION['qazmko']) && ($userCont->userIsALive($_SESSION['qazmko']))) {
+    include_once ('../gettext/langTools.php');
 } else {
     die();
 }
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>News</title>
+    <title><?php echo __('News') ?></title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -28,19 +31,19 @@ if (isset($_SESSION['qazmko']) && ($userCont->userIsALive($_SESSION['qazmko'])))
 
 <div class="container">
 
-    <h3 class="center" style="margin-bottom:20px;">search Engine <i class="material-icons medium hide-on-small-only"
+    <h3 class="center" style="margin-bottom:20px;"><?php echo __('search Engine') ?> <i class="material-icons medium hide-on-small-only"
                                                                     id="icons"></i></h3>
 
     <form action="./userPage.php?name=<?php ?>" method="post">
         <div class="input-field">
             <i class="material-icons prefix">public</i>
             <input type="text" name="search-field" id="searchquery" required>
-            <label>Find a specific word ......</label>
+            <label><?php echo __('Find a specific word ......') ?></label>
         </div>
 
         <div class="row">
-            <input type="submit" name="search" id="searchBtn" class="btn col m2 s12" value="search">
-            <input type="reset" id="resetBtn" class="btn col m2 s12 red right" value="clear" style="margin-top:3px;">
+            <input type="submit" name="search" id="searchBtn" class="btn col m2 s12" value="<?php echo __('search') ?>">
+            <input type="reset" id="resetBtn" class="btn col m2 s12 red right" value="<?php echo __('clear') ?>" style="margin-top:3px;">
         </div>
 
     </form>
@@ -71,7 +74,7 @@ if (isset($_SESSION['qazmko']) && ($userCont->userIsALive($_SESSION['qazmko'])))
 
     <div><br/>
         <form action="userNavigator.php?" method="post">
-            <input type="submit" class="btn col m2 s12" name="back" value="user Panel"/>
+            <input type="submit" class="btn col m2 s12" name="back" value="<?php echo __('user Panel') ?>"/>
         </form>
     </div>
 

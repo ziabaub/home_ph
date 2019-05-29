@@ -7,14 +7,13 @@
  */
 session_start();
 
-
 require '../control/dbControl/adminDbControl.inc';
 require '../control/textControl/spellingCheckAndGetNewInfoUser.php';
 require '../control/dbControl/UserControl.php';
 $userCont = new userControl();
 
 if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmkoAdmin']))) {
-
+include_once ('../gettext/langTools.php');
     if (mysqli_connect_errno()) {
         die();
     } else {
@@ -64,7 +63,7 @@ if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmko
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Companies !</title>
+    <title><?php echo __('Companies !') ?></title>
     <link rel="stylesheet" href="AdminPageStyleSheet.css">
 </head>
 <body>
@@ -75,13 +74,13 @@ if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmko
 
     <div class="labelFields">
         <ul>
-            <li>Name:</li>
-            <li>Address:</li>
-            <li>Phone:</li>
-            <li>Email:</li>
+            <li><?php echo __('Name:') ?></li>
+            <li><?php echo __('Address:') ?></li>
+            <li><?php echo __('Phone:') ?></li>
+            <li><?php echo __('Email:') ?></li>
             <li></li>
-            <li><h3>Search E.</h3></li>
-            <li><h4>C. Name</h4></li>
+            <li><h3><?php echo __('Search E.') ?></h3></li>
+            <li><h4><?php echo __('C. Name') ?></h4></li>
         </ul>
     </div>
 
@@ -94,7 +93,7 @@ if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmko
                     <input type="text" name="name" onfocus="this.value =''" value="Ziad Sarrih">
                 </li>
                 <li>
-                    <input type="text" name="address" onfocus="this.value =''" value="Country Town Street 345">
+                    <input type="text" name="address" onfocus="this.value =''" value="<?php echo __('Country Town Street 345') ?>">
                 </li>
                 <li>
                     <input type="text" name="phone" onfocus="this.value =''" value="+375444722956">
@@ -107,12 +106,12 @@ if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmko
                 </li>
                 <li>
                     <form action="adminPage.php?name=<?php echo $title ?>" method="post">
-                        <input type="submit" name="deleteFromDatabase" value="Delete">
+                        <input type="submit" name="deleteFromDatabase" value="<?php echo __('Delete') ?>">
                     </form>
                 </li>
                 <li>
                     <form action="adminPage.php?name=<?php echo $title ?>" method="post">
-                        <input type="submit" name="getDatabase" value="GetDataBase">
+                        <input type="submit" name="getDatabase" value="<?php echo __('GetDataBase') ?>">
                     </form>
                 </li>
                 <li>
@@ -123,7 +122,7 @@ if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmko
                                        value="!!!">
                             </li>
                             <li>
-                                <input type="submit" name="search_button" value="Search">
+                                <input type="submit" name="search_button" value="<?php echo __('search') ?>">
                             </li>
                         </ul>
                     </form>
@@ -154,7 +153,7 @@ if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmko
         </div>
         <div><br/>
             <form action="adminPage.php?name=<?php echo $title ?>" method="post">
-                <input type="submit" name="saveData" value="Clear"/>
+                <input type="submit" name="saveData" value="<?php echo __('Clear') ?>"/>
             </form>
         </div>
     </div>
@@ -163,7 +162,7 @@ if (isset($_SESSION['qazmkoAdmin']) && ($userCont->userIsALive($_SESSION['qazmko
 
 <div><br/>
     <form action="adminNavigator.php?name=<?php echo $title ?>" method="post">
-        <input type="submit" name="back" value="Admin Panel"/>
+        <input type="submit" name="back" value="<?php echo __('Admin Panel') ?>"/>
     </form>
 </div>
 

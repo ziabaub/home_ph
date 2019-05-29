@@ -21,7 +21,11 @@ function __($text)
 }
 
 ?>
+<<<<<<< HEAD
 <h1><?php echo __('translate me') ?></h1>
+=======
+<!--<h1>--><?php //echo __('translate mse') ?><!--</h1>-->
+>>>>>>> pas
 <!--<p>--><?php //echo _('hello my friends') ?><!--</p>-->
 
 

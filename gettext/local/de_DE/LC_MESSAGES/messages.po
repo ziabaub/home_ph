@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: home\n"
-"POT-Creation-Date: 2019-05-29 02:57+0300\n"
-"PO-Revision-Date: 2019-05-29 02:57+0300\n"
+"Project-Id-Version: german\n"
+"POT-Creation-Date: 2019-05-29 18:59+0300\n"
+"PO-Revision-Date: 2019-05-29 19:05+0300\n"
 "Last-Translator: \n"
 "Language-Team: myTeam\n"
 "Language: de_DE\n"
@@ -10,12 +10,323 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.3\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;gettext;gettext_noop\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: gettext\n"
+"X-Poedit-SearchPath-1: .\n"
 
-#: demo.php:24
-msgid "translate me"
-msgstr "hello"
+#: admin/adminNavigator.php:22
+msgid "Admin Navigator"
+msgstr "Navigation"
+
+#: admin/adminNavigator.php:27 admin/adminPageManagement.php:24
+#: admin/adminPageManagement.php:28
+msgid "Admin Page"
+msgstr "Administrator Seite"
+
+#: admin/adminNavigator.php:31
+msgid "User Management"
+msgstr "Benutzerseite"
+
+#: admin/adminNavigator.php:35
+msgid "Page Management"
+msgstr "Seitenverwaltung"
+
+#: admin/adminNavigator.php:39 user/userNavigator.php:39
+msgid "Logout"
+msgstr "Ausloggen"
+
+#: admin/adminPage.php:66
+msgid "Companies !"
+msgstr "Firmen !"
+
+#: admin/adminPage.php:77
+msgid "Name:"
+msgstr "Name:"
+
+#: admin/adminPage.php:78
+msgid "Address:"
+msgstr "Adresse :"
+
+#: admin/adminPage.php:79
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: admin/adminPage.php:80
+msgid "Email:"
+msgstr "Email :"
+
+#: admin/adminPage.php:82
+msgid "Search E."
+msgstr "Suche ."
+
+#: admin/adminPage.php:83
+msgid "C. Name"
+msgstr "Dein Name"
+
+#: admin/adminPage.php:96
+msgid "Country Town Street 345"
+msgstr "Land-Stadtstraße 345"
+
+#: admin/adminPage.php:109
+msgid "Delete"
+msgstr "Löschen"
+
+#: admin/adminPage.php:114
+msgid "GetDataBase"
+msgstr "Datenbank abrufen"
+
+#: admin/adminPage.php:125 user/userPage.php:45
+msgid "search"
+msgstr "Suche"
+
+#: admin/adminPage.php:156
+msgid "Clear"
+msgstr "Klar"
+
+#: admin/adminPage.php:165 admin/adminPageManagement.php:94
+msgid "Admin Panel"
+msgstr "Administrationsmenü"
+
+#: admin/adminPageManagement.php:34
+msgid "Article id"
+msgstr "Artikelnummer"
+
+#: admin/adminPageManagement.php:35 admin/adminPageManagement.php:63
+msgid "Article name"
+msgstr "Artikelname"
+
+#: admin/adminPageManagement.php:36
+msgid "Img"
+msgstr "Bild"
+
+#: admin/adminPageManagement.php:37 admin/adminPageManagement.php:70
+msgid "Author"
+msgstr "Autor"
+
+#: admin/adminPageManagement.php:66
+msgid "Article-contents"
+msgstr "Artikel-Inhalt"
+
+#: admin/adminPageManagement.php:74
+msgid "add"
+msgstr "hinzufügen"
+
+#: admin/adminPageManagement.php:84
+msgid "get"
+msgstr "erhalten"
+
+#: admin/adminPageManagement.php:85
+msgid "delete"
+msgstr "löschen"
+
+#: admin/adminPageManagement.php:86
+msgid "article name"
+msgstr "Artikelname"
+
+#: admin/adminPageManagement.php:97
+msgid "refresh"
+msgstr "Aktualisierung"
+
+#: contact/contact.php:22
+msgid "Responsive page"
+msgstr "Responsive Seite"
+
+#: contact/contact.php:49 index.php:81
+msgid "HOME"
+msgstr "ZUHAUSE"
+
+#: contact/contact.php:52 index.php:84
+msgid "NEWS"
+msgstr "NACHRICHTEN"
+
+#: contact/contact.php:55 index.php:87
+msgid "PRODUCTS"
+msgstr "PRODUKTE"
+
+#: contact/contact.php:58 index.php:90
+msgid "SERVICES"
+msgstr "DIENSTLEISTUNGEN"
+
+#: contact/contact.php:61 index.php:93
+msgid "CONTACTS"
+msgstr "KONTAKTE"
+
+#: contact/contact.php:72
+msgid "Get In Touch"
+msgstr "In Kontakt kommen"
+
+#: contact/contact.php:73
+msgid "Address : Beirut facing Chamsine Bakery"
+msgstr "Adresse: Beirut mit Blick auf Chamsine Bakery"
+
+#: contact/contact.php:74
+msgid "Email : msr.trading.travel.co@gmail.com"
+msgstr "E-Mail: msr.trading.travel.co@gmail.com"
+
+#: contact/contact.php:75
+msgid "Phone : +961 76 743 330"
+msgstr "Telefon: +961 76 743 330"
+
+#: contact/contact.php:82
+msgid "name :"
+msgstr "Name :"
+
+#: contact/contact.php:85
+msgid "address :"
+msgstr "Adresse :"
+
+#: contact/contact.php:88
+msgid "phone :"
+msgstr "Telefon:"
+
+#: contact/contact.php:91
+msgid "email :"
+msgstr "Email :"
+
+#: contact/contact.php:94
+msgid "message :"
+msgstr "Botschaft :"
+
+#: contact/contact.php:110
+msgid "Your Name"
+msgstr "Dein Name"
+
+#: contact/contact.php:113
+msgid "Your Address"
+msgstr "Deine Adresse"
+
+#: contact/contact.php:119
+msgid "Your Email"
+msgstr "Deine E-Mail"
+
+#: contact/contact.php:123
+msgid "Message"
+msgstr "Botschaft"
+
+#: contact/contact.php:138 index.php:122
+msgid "Go for new performance"
+msgstr "Gehen Sie für eine neue Leistung"
+
+#: index.php:45
+msgid "Trading And Travel"
+msgstr "Handel und Reisen"
+
+#: index.php:72
+msgid "Navigation"
+msgstr "Navigation"
+
+#: index.php:112
+msgid "All new. For a better you"
+msgstr "Alles neu. Für ein besseres Du"
+
+#: index.php:139 index.php:150 index.php:161 index.php:172
+msgid ""
+"After World War II, Ruska resumed work at Siemens, where he continued to "
+"develop the electron microscope,\n"
+"        producing the first microscope with 100k magnification.[12] The "
+"fundamental structure of this microscope design,\n"
+"        with multi-stage beam preparation optics, is still used in modern "
+"microscopes. The worldwide electron microscopy\n"
+"        community advanced with electron microscopes being manufactured in "
+"Manchester UK, the USA (RCA), Germany\n"
+"        (Siemens)\n"
+"        and Japan (JEOL). The first international conference in electron "
+"microscopy was in Delft in 1949, with more than\n"
+"        one hundred attendees.[11] Later conferences included the \"First\" "
+"international conference in Paris, 1950 and\n"
+"        then in London in 1954."
+msgstr ""
+"Nach dem Zweiten Weltkrieg nahm Ruska seine Arbeit bei Siemens wieder auf, "
+"wo er das Elektronenmikroskop weiterentwickelte.\n"
+"         Herstellung des ersten Mikroskops mit 100k-Vergrößerung. [12] Die "
+"grundlegende Struktur dieses Mikroskopdesigns,\n"
+"         mit mehrstufiger Strahlvorbereitungsoptik, wird noch in modernen "
+"Mikroskopen eingesetzt. Die weltweite Elektronenmikroskopie\n"
+"         Community Advanced mit Elektronenmikroskopen, die in Manchester, "
+"Großbritannien, USA (RCA), Deutschland hergestellt werden\n"
+"         (Siemens)\n"
+"         und Japan (JEOL). Die erste internationale Konferenz in der "
+"Elektronenmikroskopie fand 1949 in Delft statt\n"
+"         einhundert Teilnehmer. [11] Spätere Konferenzen umfassten die "
+"“Erste” internationale Konferenz in Paris, 1950 und 1950\n"
+"         dann 1954 in London."
+
+#: user/userNavigator.php:22
+msgid "User Navigator"
+msgstr "Navigation"
+
+#: user/userNavigator.php:27
+msgid "User Page"
+msgstr "Benutzerseite"
+
+#: user/userNavigator.php:31
+msgid "My Page"
+msgstr "Meine Seite"
+
+#: user/userNavigator.php:35
+msgid "Profile"
+msgstr "Profil"
+
+#: user/userPage.php:24
+msgid "News"
+msgstr "Nachrichten"
+
+#: user/userPage.php:34
+msgid "search Engine"
+msgstr "Suche"
+
+#: user/userPage.php:41
+msgid "Find a specific word ......"
+msgstr "Finde ein bestimmtes Wort ……"
+
+#: user/userPage.php:46
+msgid "clear"
+msgstr "klar"
+
+#: user/userPage.php:77
+msgid "user Panel"
+msgstr "Benutzerbereich"
+
+#: userLogin/login.php:8 userLogin/register.php:10
+msgid "Contact Form"
+msgstr "Kontakt Formular"
+
+#: userLogin/login.php:13
+msgid "login"
+msgstr "Anmeldung"
+
+#: userLogin/login.php:18 userLogin/setNewPassword.php:22
+msgid "username"
+msgstr "Nutzername"
+
+#: userLogin/login.php:20 userLogin/setNewPassword.php:24
+msgid "password"
+msgstr "Passwort"
+
+#: userLogin/login.php:22
+msgid "Login"
+msgstr "Anmeldung"
+
+#: userLogin/login.php:26 userLogin/register.php:22
+#: userLogin/setNewPassword.php:16
+msgid "Register"
+msgstr "Registrieren"
+
+#: userLogin/register.php:15
+msgid "register"
+msgstr "registrieren"
+
+#: userLogin/register.php:20
+msgid "Your email"
+msgstr "Deine E-Mail"
+
+#: userLogin/setNewPassword.php:11
+msgid "Register Form "
+msgstr "Registrierungsformular "
+
+#: userLogin/setNewPassword.php:26
+msgid "Set info"
+msgstr "Info einstellen"

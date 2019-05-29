@@ -33,10 +33,15 @@ if (mysqli_connect_error()) {
 
     } else if (isset($_POST['logout'])) {
 
-        if (isset($_SESSION['qazmko'])) $tools->delCurrentUser($_SESSION['qazmko']);
-        if (isset($_SESSION['qazmkoAdmin'])) $tools->delCurrentUser($_SESSION['qazmkoAdmin']);
-        session_destroy();
-        header("Location: ../userLogin/login.php");
+        if (isset($_SESSION['qazmko'])) {
+            $tools->delCurrentUser($_SESSION['qazmko']);
+            unset($_SESSION['qazmko']);
+        };
+        if (isset($_SESSION['qazmkoAdmin'])) {
+            $tools->delCurrentUser($_SESSION['qazmkoAdmin']);
+            unset($_SESSION['qazmkoAdmin']);
+        };
+        header("Location: ../index.php");
 
     } else if (isset($_POST['register'])) {
         if ($tools->containsDatabaseNewUser($_POST)) {
